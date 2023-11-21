@@ -20,10 +20,10 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - alibabacloud-tea-util <1.0.0,>=0.3.8
-    - alibabacloud-tea-openapi <1.0.0,>=0.3.6
-    - alibabacloud-openapi-util <1.0.0,>=0.2.1
-    - alibabacloud-endpoint-util <1.0.0,>=0.0.3
+    - alibabacloud-tea-util >=0.3.11,<1.0.0
+    - alibabacloud-tea-openapi >=0.3.6,<1.0.0
+    - alibabacloud-openapi-util >=0.2.1,<1.0.0
+    - alibabacloud-endpoint-util >=0.0.3,<1.0.0
 
 test:
   imports:
