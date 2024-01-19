@@ -1,5 +1,5 @@
 {% set name = "alibabacloud-adb20211201" %}
-{% set version = "1.2.6" %}
+{% set version = "1.2.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/alibabacloud_adb20211201-{{ version }}.tar.gz
-  sha256: c62fd6e84d8f61362f237f6ac12ee0736a4cb4b8fdadc3bccfe6ce9c16c12cda
+  sha256: a853dc7dda4fe4526673f92a0b28ab7796d537c030c4b31a3d2bbceeecd8b13c
 
 build:
   noarch: python
