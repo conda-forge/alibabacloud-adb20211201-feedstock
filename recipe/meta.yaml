@@ -1,5 +1,5 @@
 {% set name = "alibabacloud-adb20211201" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/alibabacloud_adb20211201-{{ version }}.tar.gz
-  sha256: 98571aca0627283f88043e22dc36fb3b10fbc7182f3ebbac96f830cc2938ad83
+  sha256: 7038fdd949e26e27f10e9501786876c6333b84fe680037c4045ecefa6b158a36
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -21,9 +21,9 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - alibabacloud-tea-util >=0.3.12,<1.0.0
-    - alibabacloud-tea-openapi >=0.3.10,<1.0.0
-    - alibabacloud-openapi-util >=0.2.1,<1.0.0
+    - alibabacloud-tea-util >=0.3.13,<1.0.0
+    - alibabacloud-tea-openapi >=0.3.12,<1.0.0
+    - alibabacloud-openapi-util >=0.2.2,<1.0.0
     - alibabacloud-endpoint-util >=0.0.3,<1.0.0
 
 test:
