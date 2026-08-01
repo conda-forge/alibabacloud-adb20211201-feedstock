@@ -1,5 +1,5 @@
 {% set name = "alibabacloud-adb20211201" %}
-{% set version = "3.7.1" %}
+{% set version = "4.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/alibabacloud_adb20211201-{{ version }}.tar.gz
-  sha256: 8e3c66440510065382f51d9b4bed24c3fa6415de6a8a0132eb8492a046a9b88b
+  sha256: 15367419d0afccc8ae6395a52ac4dcb18d44f49f970909b39b6e8978ebe53e39
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - darabonba-core >=1.0.0,<2.0.0
-    - alibabacloud-tea-openapi <1.0.0,>=0.4.1
+    - alibabacloud-tea-openapi >=0.4.5,<1.0.0
 
 test:
   imports:
