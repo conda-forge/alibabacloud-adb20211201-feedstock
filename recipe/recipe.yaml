@@ -32,7 +32,9 @@ tests:
       imports:
         - alibabacloud_adb20211201
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Alibaba Cloud adb (20211201) SDK Library for Python
