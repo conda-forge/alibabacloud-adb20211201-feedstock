@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: alibabacloud-adb20211201
-  version: "4.0.2"
+  version: "4.0.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/alibabacloud_adb20211201-${{ version }}.tar.gz
-  sha256: 09548f8cd7784f26a565f8f87a52169d2b9eebc3e1b043dab5c1ce4c945a93ca
+  sha256: d0c0ff6e4c79864e34c3f55d21841d668d3c7d348cc8313c2ebaa4c04a8b1ba5
 
 build:
   number: 0
@@ -32,7 +32,9 @@ tests:
       imports:
         - alibabacloud_adb20211201
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Alibaba Cloud adb (20211201) SDK Library for Python
