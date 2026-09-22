@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: alibabacloud-adb20211201
-  version: "4.2.0"
+  version: "4.5.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/alibabacloud_adb20211201-${{ version }}.tar.gz
-  sha256: 1512dfe98f2da3a6b5e4a88bfb0652a6275fdc97744fb7fad123f88ea570abef
+  sha256: c937e605be40fe28cfbff697f0f23a3955dc96f83e47f42237c74cc4ba3cf0af
 
 build:
   number: 0
